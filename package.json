@@ -1,0 +1,69 @@
+{
+  "name": "1337-monitoring-bot",
+  "version": "2.0.0",
+  "description": "Professional 1337 website monitoring bot with WhatsApp notifications, auto-reconnection, and keyword search",
+  "main": "remixed-cee7bfda.js",
+  "scripts": {
+    "start": "node remixed-cee7bfda.js",
+    "setup": "node setup.js",
+    "test": "node test-notifications.js",
+    "dev": "cross-env DEBUG=true node remixed-cee7bfda.js",
+    "lint": "eslint *.js",
+    "clean": "rm -rf logs/* saved_html/* whatsapp_session/*",
+    "logs": "tail -f logs/combined.log",
+    "help": "echo 'Available commands: npm start, npm setup, npm test, npm dev, npm clean'"
+  },
+  "keywords": [
+    "1337",
+    "monitoring",
+    "whatsapp",
+    "bot",
+    "automation",
+    "web-scraping",
+    "notifications",
+    "puppeteer",
+    "baileys"
+  ],
+  "author": "1337 Monitoring Team",
+  "license": "MIT",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "@whiskeysockets/baileys": "^6.7.18",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "diff": "^8.0.2",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.7",
+    "pino": "^8.17.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "qrcode-terminal": "^0.12.0",
+    "twilio": "^5.7.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.54.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/1337-monitoring-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/1337-monitoring-bot/issues"
+  },
+  "homepage": "https://github.com/your-username/1337-monitoring-bot#readme",
+  "os": [
+    "linux",
+    "darwin",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ]
+}
